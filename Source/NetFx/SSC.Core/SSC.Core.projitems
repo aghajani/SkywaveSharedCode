@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>0511837d-a62b-4f55-8469-b151ed3637ec</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>SSC</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Collections\InlineEqualityComparer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ConstantsSsc.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataStructure\CurrencyValue.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataStructure\Pair.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\DataCondition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\DataConditionHolder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\DataConditionSqlGenerationEventArgs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\SqlCommandString.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ConstantsEnums.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DateTimeSsc.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\Compression\IZipStorerProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IO\Compression\ZipStorer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Linq\Extensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DateTimeHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Net\Extensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Net\FtpClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Net\FtpListRecord.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Net\HttpWebRequestHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Net\IPList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Net\WebApiClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NumberHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Random.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)StringHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Threading\Tasks\TaskRun.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Threading\Tasks\TaskRunResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Threading\Tasks\TaskRunSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TimeSpanHelper.cs" />
+  </ItemGroup>
+</Project>
