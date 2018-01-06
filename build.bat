@@ -25,7 +25,8 @@ REM if exist "%programfiles(x86)%\Microsoft Visual Studio\2017\Enterprise\MSBuil
 REM     set msbuild="%programfiles(x86)%\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe"
 REM )
 
-echo Restore
+echo Restore...
+call %nuget% restore BuildSource\SSC.NetFx.Core\SSC.NetFx.Core.sln
 call dotnet restore BuildSource\SSC.NetFx.Core\SSC.NetFx.Core.sln
 
 echo Building...
