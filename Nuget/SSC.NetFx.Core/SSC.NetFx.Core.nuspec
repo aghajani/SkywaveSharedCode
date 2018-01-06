@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SSC.NetFx.Core</id>
+    <version>$version$</version>
+    <title>SkywaveSharedCode NetFx Core</title>
+    <authors>Skywave, Mostafa Aghajani</authors>
+    <owners>Mostafa Aghajani</owners>
+    <licenseUrl>https://github.com/aghajani/SkywaveSharedCode/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/aghajani/SkywaveSharedCode</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/aghajani/SkywaveSharedCode/master/Icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Many tiny or huge code base and tools for different types of projects.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright &#x00A9; Skywave.  All rights reserved.</copyright>
+    <tags>skywave linq persian tools</tags>
+    <dependencies>
+      <dependency id="newtonsoft.json" version="10.0.3" />
+    </dependencies>  
+  </metadata>
+  <files>
+    <file src="..\..\BuildSource\SSC.NetFx.Core\NetF45\bin\$configuration$\SSC.NetFx.Core.dll" target="lib\net45\" />
+    <file src="..\..\BuildSource\SSC.NetFx.Core\NetCore2\bin\$configuration$\netcoreapp2.0\SSC.NetFx.Core.dll" target="lib\netcoreapp2.0\" />
+  </files>
+</package>
