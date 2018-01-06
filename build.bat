@@ -29,8 +29,8 @@ echo Restore
 call dotnet restore BuildSource\SSC.NetFx.Core\SSC.NetFx.Core.sln
 
 echo Building...
-call dotnet build BuildSource\SSC.NetFx.Core\SSC.NetFx.Core.sln /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=diag /nr:false
-REM call %msbuild% BuildSource\SSC.NetFx.Core\SSC.NetFx.Core.sln /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=diag /nr:false
+REM call dotnet build BuildSource\SSC.NetFx.Core\SSC.NetFx.Core.sln /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=diag /nr:false
+call %MsBuildExe% BuildSource\SSC.NetFx.Core\SSC.NetFx.Core.sln /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=diag /nr:false
 
 mkdir Build
 mkdir Build\SSC.NetFx.Core
